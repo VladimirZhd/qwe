@@ -1,0 +1,42 @@
+.layout {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: var(--bg-alpha);
+    min-height: 100vh;
+    width: 100%;
+    z-index: 100;
+}
+
+.layout__aside-container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    background-color: var(--bg-gamma);
+    width: 80px;
+    height: 100%;
+    z-index: 1001;
+    flex-direction: column;
+
+    @media (max-width: 1279px){
+        width: 64px;
+    }
+
+    @media (max-width: 960px){
+        width: 48px;
+    }
+
+    @media (max-width: 768px){
+        width: 48px;
+    }
+
+    @media (max-width: 768px) and (orientation: portrait){
+        bottom: 0;
+        height: 40px;
+        width: 100%;
+        min-height: 0;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,85 @@
+.content-title {
+    margin-bottom: .8rem;
+
+    span {
+        font-size: 2.6rem;
+        font-weight: 700;
+        line-height: 0;
+    }   
+}
+
+.pro-p-setting__group {
+    display: flex;
+    flex-direction: column;
+    margin: 2.4rem 0;
+
+    .pro-p-setting__group_has_grow {
+        margin-bottom: 1.6rem;
+        font-size: 2.1rem;
+        line-height: 1;
+        font-weight: 700;
+    }
+
+    .pro-p-setting__group-item {
+        min-height: 5.6rem;
+        margin-bottom: .8rem;
+        padding: .8rem 1.6rem;
+        color: var(--contrast-alpha);
+        background-color: var(--base-alpha);
+        border: 1px solid var(--base-alpha);
+        border-radius: .6rem;
+        transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+
+        &:hover {
+            background-color: var(--high-gamma);
+            border-color: var(--high-gamma);
+        }
+
+        &:active {
+            background-color: var(--bg-beta);
+            border-color: var(--bg-beta);
+        }
+
+        .btn-mod-item-content {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .btn-mod-item-content__icon {
+                display: flex;
+                
+                .setting_icon {
+                    color: var(--contrast-gamma);
+                }
+
+                .warning {
+                    color: var(--warning-alpha);
+                }
+            }
+
+            .porsonal_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 0 1.2rem;
+                width: 100%;
+
+                span {
+                    font-size: 1.6rem;
+                    margin-bottom: .4rem;
+                    text-align: left;
+                }
+
+                .personal_data {
+                    color: var(--contrast-gamma);
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+
+                .last_chenk {
+                    margin: .4rem 0;
+                }
+            }
+        }
+    }
+}

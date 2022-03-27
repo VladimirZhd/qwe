@@ -1,0 +1,82 @@
+// Открытие Pop-up
+.ad-pro-m-panel-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0,0,0,.6);
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .25s ease-out,z-index 0ms .25s;
+    width: 100%;
+    z-index: 1;
+    color: var(--contrast-alpha);
+}
+
+
+
+.ad-pro-m-panel-overlay_opened {
+    opacity: 1;
+    transition: opacity 225ms ease-out,z-index 0ms 0ms;
+    z-index: 1002;
+    cursor: pointer;
+}
+
+.cor-w-panel {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 36rem;
+    top: 0;
+    right: 0;
+    z-index: 1010;
+    overflow: hidden;
+    background-color: var(--bg-gamma);
+    transform: translateX(100%);
+    transition: transform .25ms ease-out;
+
+    @media (max-width: 768px) and (orientation: portrait){
+        max-width: 100%;
+    }
+}
+
+.cor-w-panel_opened {
+    transform: none;
+    z-index: 1010;
+}
+
+.ad-pro-m-panel {
+    border: none;
+    display: block;
+    position: fixed;
+    z-index: 1010;
+    background-color: var(--bg-alpha);
+    transition: transform 225ms ease-in-out, background-color 225ms ease-in-out, border-color 225ms ease-in-out;
+    
+}
+
+// Скрытие блоков и появление при нажатии на setting
+.popup-profile {
+    opacity: 1;
+    left: 0;
+}
+
+.profile-closing {
+    left: 36rem;
+    opacity: 0;
+    transition: opacity 225ms ease-out,left 225ms ease-out;
+}
+
+.popup-setting {
+    opacity: 0;
+    left: 36rem;
+}
+
+.setting-open {
+    left: 0;
+    opacity: 1;
+    transition: opacity 225ms ease-out,left 225ms ease-out;
+}

@@ -1,0 +1,23 @@
+.pro_settings_name {
+    color: var(--contrast-gamma);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.pro-p-personal-c-upload-avatar__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 0 0rem;
+    top: 0;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.pro-c-status_failed {
+    color: var(--warning-alpha);
+}
