@@ -1,7 +1,7 @@
 import React from 'react';
 import Content from '../content/Content';
 
-const Layout = ({ openContainer, modal }) => {
+const Layout = ({ openContainer }) => {
 	return (
 		<div className='layout'>
 			<div className='layout__aside-container'>

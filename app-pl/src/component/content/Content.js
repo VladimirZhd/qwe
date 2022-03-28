@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header_plf from '../header/Header_plf';
 
 const Content = ({ openContainer, modal }) => {

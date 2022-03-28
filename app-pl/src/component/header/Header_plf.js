@@ -1,26 +1,11 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import userMinAva from '../../image/ava.jpg';
 
 const Header_plf = ({ openContainer }) => {
-	const [flag, setFlag] = useState('');
-
 	const handleClick = (e) => {
-		// if (!e.target.name) {
-		// 	setFlag(e.target.parentElement.name);
-		// } else {
-		// 	setFlag(e.target.name);
-		// }
 		openContainer('');
 	};
-
-	// useEffect(() => {
-	// 	if (flag) {
-	// 		openContainer(flag);
-	// 	}
-	// 	setFlag('');
-	// }, [flag]);
 
 	return (
 		<div className='com-header-platform'>
