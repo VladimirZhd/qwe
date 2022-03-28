@@ -16,12 +16,15 @@ import '../src/component/modal_view/personal/personal.scss';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<BrowserRouter>
+		<React.StrictMode>
+			<App />
+		</React.StrictMode>
+	</BrowserRouter>,
+	document.getElementById('root')
 );
 
 reportWebVitals();
